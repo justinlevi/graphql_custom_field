@@ -18,7 +18,8 @@ use Youshido\GraphQL\Execution\ResolveInfo;
  *   secure = true,
  *   name = "currentTime",
  *   type = "String",
- *   multi = false
+ *   multi = false,
+ *   response_cache_max_age = 0
  * )
  */
 class CurrentTime extends FieldPluginBase implements ContainerFactoryPluginInterface {

@@ -18,8 +18,7 @@ use Youshido\GraphQL\Execution\ResolveInfo;
  *   secure = true,
  *   name = "currentTime",
  *   type = "String",
- *   multi = false,
- *   response_cache_max_age = 0
+ *   multi = false
  * )
  */
 class CurrentTime extends FieldPluginBase implements ContainerFactoryPluginInterface {
@@ -53,11 +52,5 @@ class CurrentTime extends FieldPluginBase implements ContainerFactoryPluginInter
     $this->timeUtilities = $timeUtilities;
     parent::__construct($configuration, $pluginId, $pluginDefinition);
   }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getDefinition(PluggableSchemaBuilderInterface $schemaBuilder) {
-    // TODO: Implement getDefinition() method.
-  }
+  
 }
